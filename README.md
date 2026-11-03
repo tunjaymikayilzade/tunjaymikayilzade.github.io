@@ -26,6 +26,6 @@ Then visit `http://localhost:5500`.
 
 ## GitHub Pages
 
-This copy is local only. After the repository `personal-website` is public on GitHub, Pages can serve it at:
+The site is hosted with GitHub Pages from the `main` branch of the repository `tunjaymikayilzade.github.io`:
 
-`https://tunjaymikayilzade.github.io/personal-website/`
+`https://tunjaymikayilzade.github.io/`
