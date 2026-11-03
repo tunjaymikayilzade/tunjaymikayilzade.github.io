@@ -1,0 +1,82 @@
+/* Platformer game on the About page */
+.game-intro {
+  margin-top: 0;
+  color: var(--muted);
+}
+
+.platformer {
+  max-width: 800px;
+}
+
+.platformer canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 800 / 360;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  background: var(--card);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.platformer canvas:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.game-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0.8rem 0;
+}
+
+.game-count {
+  margin: 0;
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
+.game-message {
+  min-height: 5.6rem;
+  background: var(--accent-soft);
+  border-radius: 14px;
+  padding: 0.9rem 1.1rem;
+}
+
+.game-message p {
+  margin: 0;
+}
+
+.game-message .card-label {
+  margin-bottom: 0.2rem;
+}
+
+.touch-controls {
+  display: none;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.touch-controls button {
+  font: inherit;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.8rem 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
+  color: var(--ink);
+  touch-action: none;
+  user-select: none;
+}
+
+@media (pointer: coarse) {
+  .touch-controls {
+    display: grid;
+  }
+}
