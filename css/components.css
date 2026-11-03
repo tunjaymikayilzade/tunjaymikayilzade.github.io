@@ -121,64 +121,18 @@
   font-size: 1.08rem;
 }
 
-.shelf {
-  margin-top: 2rem;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 22px;
-  padding: 1.3rem;
-  box-shadow: var(--shadow);
-}
-
-.books {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.8rem;
-  margin: 1rem 0;
-}
-
-.book {
-  min-height: 7.5rem;
-  border: 0;
-  border-radius: 8px 16px 16px 8px;
-  cursor: pointer;
-  color: #fffdf8;
-  font: inherit;
+.card-label {
+  margin: 0 0 0.2rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  text-align: left;
-  padding: 1rem;
-  box-shadow: inset 8px 0 0 rgba(0, 0, 0, 0.12);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
 }
 
-.book[aria-selected="true"] {
-  transform: translateY(-4px);
-  outline: 3px solid #8fd0c8;
-}
-
-.book--school { background: #1a6b63; }
-.book--reading { background: #3d5a80; }
-.book--games { background: #9a5b24; }
-
-.chapter {
-  background: var(--accent-soft);
-  border-radius: 14px;
-  padding: 1rem 1.1rem 0.2rem;
-  min-height: 6.5rem;
-}
-
-.facts {
-  display: grid;
-  grid-template-columns: 9rem 1fr;
-  gap: 0.35rem 1rem;
-  margin: 1.5rem 0 0;
-}
-
-.facts dt {
-  font-weight: 600;
-}
-
-.facts dd {
-  margin: 0;
+.card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.15rem;
 }
 
 .project {
@@ -272,12 +226,7 @@ tr.is-me {
 @media (max-width: 800px) {
   .hero,
   .card-grid,
-  .project,
-  .books {
-    grid-template-columns: 1fr;
-  }
-
-  .facts {
+  .project {
     grid-template-columns: 1fr;
   }
 
