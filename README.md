@@ -1,0 +1,31 @@
+# Tunjay Mikayilzade — personal website
+
+Static site for SITE 1101 at ADA University. It has a home page, an about page, and a projects page.
+
+## Pages
+
+- `index.html` — photo and a short introduction
+- `about.html` — school, reading, and games
+- `projects.html` — Project 1 (Group 18 logic gates). Project 2 and Project 3 are listed as not started
+
+## Files
+
+- `css/` — layout and components
+- `js/main.js` — menu, year, and the chapter switcher on the about page
+- `assets/images/` — profile photo, OR-gate diagram, favicon
+
+## Open it locally
+
+Open `index.html` in a browser, or from this folder run:
+
+```bash
+python -m http.server 5500
+```
+
+Then visit `http://localhost:5500`.
+
+## GitHub Pages
+
+This copy is local only. After the repository `personal-website` is public on GitHub, Pages can serve it at:
+
+`https://tunjaymikayilzade.github.io/personal-website/`
