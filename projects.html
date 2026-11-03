@@ -44,9 +44,24 @@
       </header>
 
       <article class="project" id="project-1">
-        <figure>
-          <img src="assets/images/or-gate.svg" width="360" height="220" alt="Diagram of an OR gate with inputs A and B and output Y">
-          <figcaption>A diagram of the OR gate I built. The working gates are in the group video.</figcaption>
+        <figure class="gate-game" id="or-game">
+          <svg viewBox="0 0 360 220" role="img" aria-label="OR gate circuit with inputs A and B and a lamp as the output">
+            <path class="wire" id="wire-a" d="M28 78h46"/>
+            <path class="wire" id="wire-b" d="M28 142h46"/>
+            <path class="gate-body" d="M78 46c28 28 28 100 0 128 52 0 96-28 118-64C174 74 130 46 78 46z"/>
+            <path class="wire" id="wire-y" d="M196 110h70"/>
+            <circle class="lamp" id="lamp" cx="290" cy="110" r="24"/>
+            <text x="12" y="74">A</text>
+            <text x="12" y="164">B</text>
+            <text x="278" y="156">Y</text>
+            <text class="gate-label" x="112" y="116">OR</text>
+          </svg>
+          <noscript><img src="assets/images/or-gate.svg" width="360" height="220" alt="Diagram of an OR gate with inputs A and B and output Y"></noscript>
+          <div class="gate-controls">
+            <button class="switch-btn" type="button" id="btn-a" aria-pressed="false">Switch A: <span>off</span></button>
+            <button class="switch-btn" type="button" id="btn-b" aria-pressed="false">Switch B: <span>off</span></button>
+          </div>
+          <figcaption id="gate-status" aria-live="polite">Press a switch. The lamp is off.</figcaption>
         </figure>
         <div>
           <ul class="tags">
@@ -56,17 +71,17 @@
           </ul>
           <h2>Logic gates</h2>
           <p>SITE 1101, Group 18, CRN 10425. Four of us built the basic gates and put the result in one video.</p>
-          <p>My part was the time registration, the educational resources the group used, and the OR gate. The output is 1 when at least one input is 1.</p>
+          <p>My part was the time registration, the educational resources the group used, and the OR gate. The output is 1 when at least one input is 1. Try it on the left: the lamp lights up if you turn on A, B, or both.</p>
           <table class="truth">
             <caption>OR gate truth table</caption>
             <thead>
               <tr><th scope="col">A</th><th scope="col">B</th><th scope="col">Y</th></tr>
             </thead>
             <tbody>
-              <tr><td>0</td><td>0</td><td>0</td></tr>
-              <tr><td>0</td><td>1</td><td>1</td></tr>
-              <tr><td>1</td><td>0</td><td>1</td></tr>
-              <tr><td>1</td><td>1</td><td>1</td></tr>
+              <tr data-row="00"><td>0</td><td>0</td><td>0</td></tr>
+              <tr data-row="01"><td>0</td><td>1</td><td>1</td></tr>
+              <tr data-row="10"><td>1</td><td>0</td><td>1</td></tr>
+              <tr data-row="11"><td>1</td><td>1</td><td>1</td></tr>
             </tbody>
           </table>
           <p><a class="btn" href="https://youtu.be/rQI84usunvg" target="_blank" rel="noopener">Watch the project video</a></p>
@@ -146,5 +161,6 @@
     </div>
   </footer>
   <script src="js/main.js" defer></script>
+  <script src="js/or-gate.js" defer></script>
 </body>
 </html>
