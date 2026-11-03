@@ -285,3 +285,94 @@ tr.is-me {
     padding-top: 2rem;
   }
 }
+
+/* OR gate game on the projects page */
+.gate-game {
+  margin: 0;
+}
+
+.gate-game svg {
+  display: block;
+}
+
+.gate-game .wire {
+  stroke: #9aa3ab;
+  stroke-width: 4;
+  stroke-linecap: round;
+  fill: none;
+  transition: stroke 0.2s ease;
+}
+
+.gate-game .wire.is-on {
+  stroke: #d99a00;
+}
+
+.gate-game .gate-body {
+  stroke: var(--accent);
+  stroke-width: 3;
+  fill: var(--accent-soft);
+}
+
+.gate-game .lamp {
+  fill: #e4dfd3;
+  stroke: #9aa3ab;
+  stroke-width: 3;
+  transition: fill 0.2s ease, filter 0.2s ease;
+}
+
+.gate-game .lamp.is-on {
+  fill: #ffd54a;
+  stroke: #d99a00;
+  filter: drop-shadow(0 0 10px rgba(255, 196, 40, 0.9));
+}
+
+.gate-game text {
+  fill: var(--ink);
+  font-family: var(--serif);
+  font-size: 16px;
+}
+
+.gate-game .gate-label {
+  fill: var(--accent-dark);
+  font-weight: 700;
+}
+
+.gate-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 0.7rem;
+}
+
+.switch-btn {
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.55rem 0.4rem;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.switch-btn:hover {
+  border-color: var(--accent);
+}
+
+.switch-btn[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.gate-game figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.truth tr.is-active {
+  background: var(--accent-soft);
+  font-weight: 700;
+}
