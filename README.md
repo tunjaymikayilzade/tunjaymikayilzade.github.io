@@ -5,13 +5,13 @@ Static site for SITE 1101 at ADA University. It has a home page, an about page, 
 ## Pages
 
 - `index.html` — photo and a short introduction
-- `about.html` — school, reading, and games
+- `about.html` — my background (school and university) and my interests
 - `projects.html` — Project 1 (Group 18 logic gates) with an interactive OR gate: two switches and a lamp. Project 2 and Project 3 are listed as not started
 
 ## Files
 
 - `css/` — layout and components
-- `js/main.js` — menu, year, and the chapter switcher on the about page
+- `js/main.js` — menu and the footer year
 - `js/or-gate.js` — the OR gate switches and lamp on the projects page
 - `assets/images/` — profile photo, OR-gate diagram, favicon
 
